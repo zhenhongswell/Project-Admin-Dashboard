@@ -1,0 +1,19 @@
+.sidebar{
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+}
+
+.project-container{
+    background-color: antiquewhite;
+}
+
+.project{
+    height: 100px;
+    width:200px;
+    background-color: white;
+}
+
+.sidebar > ul{
+    list-style: none;
+}
