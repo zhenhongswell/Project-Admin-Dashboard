@@ -23,14 +23,21 @@ header{
 
 header .user-info{
     grid-column: 4/6;
+    justify-self: center;
 }
 
 header .buttons{
     grid-column: 4/6;
+    justify-self: center;
+    /* padding: 20px; */
+}
+
+header .buttons button{
+    padding: 20px;
 }
 
 header .user-image{
-    background-color: green;
+    background-color: darkgray;
     grid-column: 1/2;
     grid-row:2/3;
 }
@@ -46,12 +53,21 @@ header ul{
     grid-column:1/4;
 }
 
-header li::before{
+header ul li{
+    display: flex;
+}
+header ul li > input{
+    flex: 1;
+    border-radius: 5px;
+}
+
+#searchbar::before{
     width: 20px;
     height: 20px;
     display: inline-block;
     content: url(./svg/magnify.svg);
 }
+
 
 .sidebar{
     grid-column: 1/2;
